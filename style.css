@@ -44,3 +44,24 @@
 .grid-cell:not(.disabled):hover {
   background: #eee;
 }
+
+.game-over {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgb(0 0 0 / 50%) 0 0 0 9999px;
+}
+.game-over-text {
+  position: absolute;
+  top: -20px;
+  font-size: 60px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  transform: translateX(-30%);
+}
+.visible {
+  display: block;
+}
