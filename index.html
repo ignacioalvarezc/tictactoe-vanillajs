@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <script src="game.js" defer></script>
+<html>
 
-    <title>❌⭕ Tic-Tac-Toe</title>
-  </head>
-  <body>
-    <div id="game">
-      <div class="grid-cell" data-value="0"></div>
-      <div class="grid-cell" data-value="1"></div>
-      <div class="grid-cell" data-value="2"></div>
-      <div class="grid-cell" data-value="3"></div>
-      <div class="grid-cell" data-value="4"></div>
-      <div class="grid-cell" data-value="5"></div>
-      <div class="grid-cell" data-value="6"></div>
-      <div class="grid-cell" data-value="7"></div>
-      <div class="grid-cell" data-value="8"></div>
+<head>
+  <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+    
+<body>
+  <div class="content">
+    <h1>TIC TAC TOE</h1>
+    
+    <div class="marker">
+      <div class="marker-item">
+        <div class="header">X</div>
+        <span id="marker-X">0</span>
+      </div>
+      <div class="marker-item">
+        <div class="header">O</div>
+        <span id="marker-O">0</span>
+      </div>
     </div>
-    <div class="game-over">
-      <span class="game-over-text"></span>
-      <button class="restart">Restart</button>
-    </div>
-  </body>
-</html>
+    
+    
+    <table id="board">
+      <tr>
+        <td data-cell="0" class="cell"></td>
+        <td data-cell="1" class="cell"></td>
+        <td data-cell="2" class="cell"></td>
+      </tr>
+      <tr>
+        <td data-cell="3" class="cell"></td>
+        <td data-cell="4" class="cell"></td>
+        <td data-cell="5" class="cell"></td>
+      </tr>
+      <tr>
+        <td data-cell="6" class="cell"></td>
+        <td data-cell="7" class="cell"></td>
+        <td data-cell="8" class="cell"></td>
+      </tr>
+    </table>
+    
+    <div id="result"></div>
+    <button id="restart">SIGUIENTE PARTIDA</button>
+  </div>
+  <script src="game.js"></script>
+</body>
